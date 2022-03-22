@@ -48,10 +48,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // TODO: implement initState
     super.initState();
     print(dir);
+     // this func to cheeck if port are close or not 
     setState(() {
         Process.run('$dir/images/installerX64/install.exe', [' start '])
           .then((ProcessResult results) {
-        print(results.stdout);
+        print("port poen");
       });
     });
   }
