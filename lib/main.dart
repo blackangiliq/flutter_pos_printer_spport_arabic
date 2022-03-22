@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     print(dir);
     setState(() {
-      Process.run('$dir/installerX64/install.exe', [' start '])
+        Process.run('$dir/images/installerX64/install.exe', [' start '])
           .then((ProcessResult results) {
         print(results.stdout);
       });
